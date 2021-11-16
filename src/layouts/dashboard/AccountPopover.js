@@ -3,7 +3,7 @@ import { alpha } from '@mui/material/styles';
 import { Button, Box, Divider, Typography, Avatar, IconButton } from '@mui/material';
 import MenuPopover from '../../components/MenuPopover';
 import account from '../../_mocks_/account';
-import db, {auth, provider} from '../../firebase';
+import {auth, provider} from '../../firebase';
 
 export default function AccountPopover() {
   const anchorRef = useRef(null);
@@ -17,9 +17,6 @@ export default function AccountPopover() {
   };
 
   const signIn = () => {
-    // db.collection("trials").add({
-    //   name: "Duncan"
-    // })
     auth.signInWithPopup(provider)
   }
 
