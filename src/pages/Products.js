@@ -1,8 +1,7 @@
 import { Container, Typography } from '@mui/material';
 import Page from '../components/Page';
 import {
-  ProductList,
-  ProductCartWidget
+  ProductList
 } from '../components/_dashboard/products';
 
 export default function EcommerceShop() {
@@ -15,7 +14,6 @@ export default function EcommerceShop() {
         </Typography>
 
         <ProductList />
-        <ProductCartWidget />
       </Container>
     </Page>
   );

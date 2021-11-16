@@ -3,6 +3,7 @@ import { alpha } from '@mui/material/styles';
 import { Button, Box, Divider, Typography, Avatar, IconButton } from '@mui/material';
 import MenuPopover from '../../components/MenuPopover';
 import account from '../../_mocks_/account';
+import db, {auth, provider} from '../../firebase';
 
 export default function AccountPopover() {
   const anchorRef = useRef(null);
@@ -14,6 +15,13 @@ export default function AccountPopover() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const signIn = () => {
+    // db.collection("trials").add({
+    //   name: "Duncan"
+    // })
+    auth.signInWithPopup(provider)
+  }
 
   return (
     <>
@@ -58,7 +66,7 @@ export default function AccountPopover() {
         <Divider sx={{ my: 1 }} />
 
         <Box sx={{ p: 2, pt: 1.5 }}>
-          <Button fullWidth color="inherit" variant="outlined">
+          <Button onClick={signIn} fullWidth color="inherit" variant="outlined">
             Logout
           </Button>
         </Box>
