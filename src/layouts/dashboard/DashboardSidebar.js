@@ -102,7 +102,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              Get more?
+              Get live chat and support
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               From only $69
