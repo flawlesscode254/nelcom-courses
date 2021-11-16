@@ -4,7 +4,7 @@ import DashboardLayout from './layouts/dashboard';
 import LogoOnlyLayout from './layouts/LogoOnlyLayout';
 
 import Products from './pages/Products';
-import Blog from './pages/Blog';
+// import Blog from './pages/Blog';
 import NotFound from './pages/Page404';
 
 // ----------------------------------------------------------------------
