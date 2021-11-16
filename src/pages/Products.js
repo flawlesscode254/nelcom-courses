@@ -7,7 +7,7 @@ import {
 export default function EcommerceShop() {
 
   return (
-    <Page title="Products">
+    <Page title="Courses">
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
           Courses
