@@ -3,12 +3,18 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCLiCd-rj-BJq1kfE5Pye2mN4LATAQntuM',
-  authDomain: 'nelcom-courses.firebaseapp.com',
-  projectId: 'nelcom-courses',
-  storageBucket: 'nelcom-courses.appspot.com',
-  messagingSenderId: '70851160017',
-  appId: '1:70851160017:web:d2361b1e7b757a768b22f0'
+  apiKey: "AIzaSyBDKUBPRQd5U5uWvM_v0MtKoTB45CPNJG8",
+
+  authDomain: "computer-preps.firebaseapp.com",
+
+  projectId: "computer-preps",
+
+  storageBucket: "computer-preps.appspot.com",
+
+  messagingSenderId: "675943935912",
+
+  appId: "1:675943935912:web:964bcbc3920fe6af1a379d"
+
 };
 
 firebase.initializeApp(firebaseConfig);

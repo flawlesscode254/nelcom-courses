@@ -11,7 +11,8 @@ import NavSection from '../../components/NavSection';
 import { MHidden } from '../../components/@material-extend';
 //
 import sidebarConfig from './SidebarConfig';
-import account from '../../_mocks_/account';
+import { auth } from "../../firebase";
+import { useAuthState } from 'react-firebase-hooks/auth'
 
 // ----------------------------------------------------------------------
 
@@ -41,6 +42,7 @@ DashboardSidebar.propTypes = {
 
 export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
   const { pathname } = useLocation();
+  const [user] = useAuthState(auth)
 
   useEffect(() => {
     if (isOpenSidebar) {
@@ -65,13 +67,10 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
       <Box sx={{ mb: 5, mx: 2.5 }}>
         <Link underline="none" component={RouterLink} to="#">
           <AccountStyle>
-            <Avatar src={account.photoURL} alt="photoURL" />
+            <Avatar src={user && user.photoURL} alt="photoURL" />
             <Box sx={{ ml: 2 }}>
               <Typography variant="subtitle2" sx={{ color: 'text.primary' }}>
-                {account.displayName}
-              </Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {account.role}
+                {user && user.displayName}
               </Typography>
             </Box>
           </AccountStyle>
@@ -102,10 +101,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              Get live chat and support
-            </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              From only $69
+              Start a Live Chat
             </Typography>
           </Box>
 
@@ -114,7 +110,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
             target="_blank"
             variant="contained"
           >
-            Upgrade to Pro
+            Launch Chat
           </Button>
         </Stack>
       </Box>
