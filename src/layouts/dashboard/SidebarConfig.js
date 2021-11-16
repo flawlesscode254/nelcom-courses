@@ -9,7 +9,7 @@ const sidebarConfig = [
     title: 'product',
     path: '/dashboard/products',
     icon: getIcon(shoppingBagFill)
-  },
+  }
   // {
   //   title: 'blog',
   //   path: '/dashboard/blog',
