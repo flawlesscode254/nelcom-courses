@@ -16,6 +16,7 @@ import ReactNative from "./pages/ReactNative"
 import Firebase from "./pages/FirebaseTutorials"
 import Git from "./pages/Git"
 import Aws from "./pages/Aws"
+import Paypal from "./pages/Paypal"
 
 export default function Router() {
   return useRoutes([
@@ -46,7 +47,8 @@ export default function Router() {
         { path: '/react-native', element: <ReactNative /> },
         { path: '/firebase', element: <Firebase /> },
         { path: '/git', element: <Git /> },
-        { path: '/aws', element: <Aws /> }
+        { path: '/aws', element: <Aws /> },
+        { path: '/pay', element: <Paypal /> }
       ]
     },
     { path: '*', element: <Navigate to="/404" replace /> }
