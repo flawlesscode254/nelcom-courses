@@ -37,10 +37,10 @@ function Product() {
         },
         onError: err => {
           setError(err);
-          console.error(err);
         },
       })
       .render(paypalRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [price]);
 
   if (paidFor) {

@@ -30,6 +30,7 @@ export default function ShopProductCard({ name, imageUrl, price, subject }) {
           setTell(doc.data().course);
         });
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
