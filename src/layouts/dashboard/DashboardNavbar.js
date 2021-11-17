@@ -35,7 +35,9 @@ DashboardNavbar.propTypes = {
 
 export default function DashboardNavbar({ onOpenSidebar }) {
   return (
-    <RootStyle>
+    <RootStyle style={{
+      backgroundColor: "#01081e"
+    }}>
       <ToolbarStyle>
         <MHidden width="lgUp">
           <IconButton onClick={onOpenSidebar} sx={{ mr: 1, color: 'text.primary' }}>
