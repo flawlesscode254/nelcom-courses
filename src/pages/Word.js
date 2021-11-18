@@ -40,9 +40,7 @@ const titles = [
   'Adding page boarders'
 ]
 
-const steps = [
-
-];
+const steps = [""];
 
 const Word = () => {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -105,8 +103,8 @@ const Word = () => {
           </React.Fragment>
         ) : (
           <React.Fragment>
-              <Intro url={courses[activeStep + 1]} />
-            <Typography sx={{ mt: 2, mb: 1 }}>{`${activeStep + 1} : ${titles[activeStep + 1]}`}  </Typography>
+              <Intro url={courses[activeStep]} />
+            <Typography sx={{ mt: 2, mb: 1 }}>{`${activeStep + 1} : ${titles[activeStep]}`}  </Typography>
             <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
               <Button
                 color="inherit"

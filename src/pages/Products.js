@@ -12,7 +12,7 @@ export default function EcommerceShop() {
     <Page title="Courses">
       {user ? (
         <Container>
-          <Typography variant="h4" sx={{ mb: 5 }}>
+          <Typography variant="h4" sx={{ mb: 2 }}>
             Courses
           </Typography>
 

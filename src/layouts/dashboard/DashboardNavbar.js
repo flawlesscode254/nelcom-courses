@@ -9,7 +9,6 @@ import AccountPopover from './AccountPopover';
 
 const DRAWER_WIDTH = 280;
 const APPBAR_MOBILE = 64;
-const APPBAR_DESKTOP = 92;
 
 const RootStyle = styled(AppBar)(({ theme }) => ({
   boxShadow: 'none',
@@ -22,11 +21,7 @@ const RootStyle = styled(AppBar)(({ theme }) => ({
 }));
 
 const ToolbarStyle = styled(Toolbar)(({ theme }) => ({
-  minHeight: APPBAR_MOBILE,
-  [theme.breakpoints.up('lg')]: {
-    minHeight: APPBAR_DESKTOP,
-    padding: theme.spacing(0, 5)
-  }
+  minHeight: APPBAR_MOBILE
 }));
 
 DashboardNavbar.propTypes = {

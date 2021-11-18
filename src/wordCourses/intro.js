@@ -16,6 +16,7 @@ function intro({url}) {
         height="500"
         controls
         src={url}
+        controlsList="nodownload"
       ></video>
     </div>
   );
