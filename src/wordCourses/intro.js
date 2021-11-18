@@ -17,6 +17,7 @@ function intro({url}) {
         controls
         src={url}
         controlsList="nodownload"
+        autoPlay
       ></video>
     </div>
   );
