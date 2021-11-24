@@ -3,17 +3,17 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBDKUBPRQd5U5uWvM_v0MtKoTB45CPNJG8",
+  apiKey: "AIzaSyAGSoMwtlv7Jh8H-GwCKqfZOdnul-7SuXQ",
 
-  authDomain: "computer-preps.firebaseapp.com",
+  authDomain: "money-disbursion.firebaseapp.com",
 
-  projectId: "computer-preps",
+  projectId: "money-disbursion",
 
-  storageBucket: "computer-preps.appspot.com",
+  storageBucket: "money-disbursion.appspot.com",
 
-  messagingSenderId: "675943935912",
+  messagingSenderId: "194461712693",
 
-  appId: "1:675943935912:web:964bcbc3920fe6af1a379d"
+  appId: "1:194461712693:web:c72ca3d859a14f4fe5cc7c"
 
 };
 

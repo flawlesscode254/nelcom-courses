@@ -22,7 +22,7 @@ export default function ShopProductCard({ name, imageUrl, price, subject }) {
   const [tell, setTell] = useState();
 
   useEffect(() => {
-    db.collection("courses")
+    db.collection("users")
       .where("email", "==", auth.currentUser.email)
       .where("course", "==", name)
       .onSnapshot((snapshot) => {

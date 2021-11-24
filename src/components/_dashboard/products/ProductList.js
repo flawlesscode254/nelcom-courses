@@ -26,7 +26,7 @@ const courses = [
   {
     id: 3,
     imageUrl:
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fexcelwithbusiness.com%2Fwp-content%2Fuploads%2F2018%2F06%2Fmicrosoftaccess.jpg&f=1&nofb=1",
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lifewire.com%2Fthmb%2FiMGl3XxrPInwGm5bLJ9AheRVaog%3D%2F768x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Fadvmicrosoftaccess-5c8ec1ac46e0fb000146ad62.jpg&f=1&nofb=1",
     name: "Micrsoft Access",
     price: 11.1,
     subject: "access",

@@ -29,7 +29,7 @@ function Product() {
         onApprove: async (data, actions) => {
           await actions.order.capture();
           await setPaidFor(true);
-          await db.collection("courses").add({
+          await db.collection("users").update({
             name: auth.currentUser.displayName,
             email: auth.currentUser.email,
             course: name
