@@ -11,7 +11,7 @@ import {
 import MenuPopover from "../../components/MenuPopover";
 import { auth, provider } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 export default function AccountPopover() {
   const anchorRef = useRef(null);
