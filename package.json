@@ -34,18 +34,21 @@
     ]
   },
   "dependencies": {
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
     "@iconify/icons-ant-design": "^1.1.0",
     "@iconify/icons-eva": "^1.1.0",
     "@iconify/icons-ic": "^1.1.10",
     "@iconify/react": "^3.0.1",
     "@mui/lab": "^5.0.0-alpha.47",
-    "@mui/material": "^5.0.0",
+    "@mui/material": "^5.2.0",
+    "@mui/styled-engine-sc": "^5.1.0",
     "@mui/utils": "^5.0.0",
     "@testing-library/jest-dom": "^5.14.1",
     "change-case": "^4.1.2",
+    "currency-converter-lt": "^1.1.4",
     "date-fns": "^2.24.0",
+    "emailjs-com": "^3.2.0",
     "faker": "^5.5.3",
     "firebase": "^8.2.3",
     "formik": "^2.2.9",
@@ -63,6 +66,7 @@
     "save": "^2.4.0",
     "simplebar": "^5.3.6",
     "simplebar-react": "^2.3.6",
+    "styled-components": "^5.3.3",
     "yup": "^0.32.9"
   },
   "devDependencies": {

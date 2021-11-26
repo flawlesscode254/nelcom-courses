@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link as RouterLink } from "react-router-dom";
-import { Box, Card, Link, Typography, Stack, Button } from "@mui/material";
+import { Box, Card, Link, Typography, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { fCurrency } from "../../../utils/formatNumber";
 import db, { auth } from "../../../firebase";
+import Another from "./Another"
 
 const ProductImgStyle = styled("img")({
   top: 0,
@@ -67,20 +68,10 @@ export default function ShopProductCard({ name, imageUrl, price, subject }) {
             alignItems="center"
             justifyContent="space-between"
           >
-            <Link
-              to={"/pay"}
-              color="inherit"
-              underline="hover"
-              component={RouterLink}
-              state={{
-                name: name,
-                price: price,
-              }}
-            >
-              <Button target="_blank" variant="contained">
-                Purchase
-              </Button>
-            </Link>
+            <Another 
+              name={name}
+              price={price}
+            />
 
             <Typography
               style={{

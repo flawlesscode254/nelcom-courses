@@ -10,12 +10,13 @@ import {
 } from "@mui/material";
 import MenuPopover from "../../components/MenuPopover";
 import { auth, provider } from "../../firebase";
-import { useAuthState } from 'react-firebase-hooks/auth'
+import { useAuthState } from "react-firebase-hooks/auth";
+import emailjs from "emailjs-com";
 
 export default function AccountPopover() {
   const anchorRef = useRef(null);
   const [open, setOpen] = useState(false);
-  const [user] = useAuthState(auth)
+  const [user] = useAuthState(auth);
 
   const handleOpen = () => {
     setOpen(true);
@@ -24,8 +25,14 @@ export default function AccountPopover() {
     setOpen(false);
   };
 
-  const signIn = () => {
-    auth.signInWithPopup(provider);
+  const signIn = async () => {
+    await auth.signInWithPopup(provider);
+    // await emailjs.send("service_yqwsm28", "template_wykzd77", {
+    //   name: "Duncan",
+    //   message: "Thank you for signing up to our platform. Please proceed to purchase one of our courses",
+    //   recipient: auth.currentUser.email,
+    //   reply_to: auth.currentUser.displayName,
+    // }, "user_xHVbXCCpLxe2ww01cVcW6");
   };
 
   const signOut = async () => {
@@ -83,10 +90,15 @@ export default function AccountPopover() {
 
         <Box sx={{ p: 2, pt: 1.5 }}>
           <Button
-            onClick={signOut}
-            fullWidth
-            color="inherit"
+            color="primary"
+            type="submit"
             variant="outlined"
+            onClick={signOut}
+            style={{
+              marginTop: 20,
+              paddingLeft: 70,
+              paddingRight: 70,
+            }}
           >
             Logout
           </Button>

@@ -3,18 +3,12 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGSoMwtlv7Jh8H-GwCKqfZOdnul-7SuXQ",
-
-  authDomain: "money-disbursion.firebaseapp.com",
-
-  projectId: "money-disbursion",
-
-  storageBucket: "money-disbursion.appspot.com",
-
-  messagingSenderId: "194461712693",
-
-  appId: "1:194461712693:web:c72ca3d859a14f4fe5cc7c"
-
+  apiKey: "AIzaSyBWeUb95S8Dd8IvaCAHvsYTx-BQLe3hI-8",
+  authDomain: "t-courses.firebaseapp.com",
+  projectId: "t-courses",
+  storageBucket: "t-courses.appspot.com",
+  messagingSenderId: "67895789170",
+  appId: "1:67895789170:web:5f0faa5bdc229e7d3ae4eb"
 };
 
 firebase.initializeApp(firebaseConfig);

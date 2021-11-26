@@ -12,7 +12,7 @@ const courses = [
     imageUrl:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapplemagazine.com%2Fwp-content%2Fuploads%2F2016%2F05%2Fimage-20.jpeg&f=1&nofb=1",
     name: "Microsoft Word",
-    price: 8.1,
+    price: 5.1,
     subject: "word",
   },
   {
@@ -20,7 +20,7 @@ const courses = [
     imageUrl:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcudoo.com%2Fwp-content%2Fuploads%2F2015%2F10%2Fmicrosoft-excel.jpg&f=1&nofb=1",
     name: "Microsoft Excel",
-    price: 8.5,
+    price: 7.5,
     subject: "excel",
   },
   {
@@ -28,7 +28,7 @@ const courses = [
     imageUrl:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lifewire.com%2Fthmb%2FiMGl3XxrPInwGm5bLJ9AheRVaog%3D%2F768x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Fadvmicrosoftaccess-5c8ec1ac46e0fb000146ad62.jpg&f=1&nofb=1",
     name: "Micrsoft Access",
-    price: 11.1,
+    price: 9.1,
     subject: "access",
   },
   {
@@ -36,7 +36,7 @@ const courses = [
     imageUrl:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2019%2F02%2Fcw_microsoft_office_365_powerpoint-100787157-large.jpg&f=1&nofb=1",
     name: "Microsoft PowerPoint",
-    price: 8.1,
+    price: 5.1,
     subject: "power",
   },
   {

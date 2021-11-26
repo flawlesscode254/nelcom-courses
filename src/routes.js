@@ -17,6 +17,7 @@ import Firebase from "./pages/FirebaseTutorials"
 import Git from "./pages/Git"
 import Aws from "./pages/Aws"
 import Paypal from "./pages/Paypal"
+import Mpesa from "./pages/Mpesa"
 
 export default function Router() {
   return useRoutes([
@@ -48,7 +49,8 @@ export default function Router() {
         { path: '/firebase', element: <Firebase /> },
         { path: '/git', element: <Git /> },
         { path: '/aws', element: <Aws /> },
-        { path: '/pay', element: <Paypal /> }
+        { path: '/pay', element: <Paypal /> },
+        { path: '/pesa', element: <Mpesa /> }
       ]
     },
     { path: '*', element: <Navigate to="/404" replace /> }
