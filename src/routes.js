@@ -18,6 +18,7 @@ import Git from "./pages/Git"
 import Aws from "./pages/Aws"
 import Paypal from "./pages/Paypal"
 import Mpesa from "./pages/Mpesa"
+import About from "./pages/About"
 
 export default function Router() {
   return useRoutes([
@@ -27,6 +28,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/main/courses" replace /> },
         { path: 'courses', element: <Products /> },
+        { path: 'about', element: <About /> },
         { path: '404', element: <NotFound /> }
       ]
     },
